@@ -5,21 +5,21 @@
 class EeroCli < Formula
   desc "Command-line utility for controlling Eero mesh WiFi networks"
   homepage "https://github.com/dciobanu/eero-cli"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dciobanu/eero-cli/releases/download/v1.0.0/eero-cli_1.0.0_darwin_amd64.tar.gz"
-      sha256 "ca867ccf90bc64f30c7500ab2cc9f8259b95ae249b64329ea544ba3123c1d60b"
+      url "https://github.com/dciobanu/eero-cli/releases/download/v1.1.0/eero-cli_1.1.0_darwin_amd64.tar.gz"
+      sha256 "3bf920cef1f4377c2ae94cafac9af2ddafce689e630f84b1e4d29497e9ccd142"
 
       def install
         bin.install "eero-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dciobanu/eero-cli/releases/download/v1.0.0/eero-cli_1.0.0_darwin_arm64.tar.gz"
-      sha256 "b7e5c8b6fc92725ad35ed5b4c34de83f393af6de78ba76212a6fa2b13e08d566"
+      url "https://github.com/dciobanu/eero-cli/releases/download/v1.1.0/eero-cli_1.1.0_darwin_arm64.tar.gz"
+      sha256 "c245eab3b3c07a038eec3f5d7138d042f599985f7d49e48231e918728a7ae3f6"
 
       def install
         bin.install "eero-cli"
@@ -29,15 +29,15 @@ class EeroCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dciobanu/eero-cli/releases/download/v1.0.0/eero-cli_1.0.0_linux_amd64.tar.gz"
-      sha256 "6cf3df72ff11d33fa9984a6cfbc37287bf7f2ab6eebc25d18234377d728d0ef6"
+      url "https://github.com/dciobanu/eero-cli/releases/download/v1.1.0/eero-cli_1.1.0_linux_amd64.tar.gz"
+      sha256 "fae74c2e1de5488dad8b88e7b04895f6280f47ae46f85bf950dcd25e5b26b54e"
       def install
         bin.install "eero-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dciobanu/eero-cli/releases/download/v1.0.0/eero-cli_1.0.0_linux_arm64.tar.gz"
-      sha256 "399a2a4c0660bb68844b25ad847bad553a821814e7f5be47dda2d427362e45e8"
+      url "https://github.com/dciobanu/eero-cli/releases/download/v1.1.0/eero-cli_1.1.0_linux_arm64.tar.gz"
+      sha256 "5e521310a44caec40a10bf25566847aa792a5576a0fdbeba2055a74058484eae"
       def install
         bin.install "eero-cli"
       end
