@@ -1,9 +1,9 @@
 cask "marksidian" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.2.0"
-  sha256 arm:   "e85ce1b0a6d01b80a4670f4e53e0c5e9adca52a514b6313c4b17d322255ffe63",
-         intel: "a91e5bd80dcc9fa848566d0a8af76f91eec97638643b1fc74d28322bea6df4fc"
+  version "0.2.1"
+  sha256 arm:   "9d6d5f8269c4c4151229259661861971686b8d3e9241f650b734a4df57a69e49",
+         intel: "b9f818c7805da18cda13f49cc295ba8477e5968b7e6b02431896247ed0614c3d"
 
   url "https://github.com/dciobanu/marksidian/releases/download/v#{version}/Marksidian-#{version}-#{arch}-mac.zip"
   name "Marksidian"
@@ -13,6 +13,11 @@ cask "marksidian" do
   depends_on macos: ">= :monterey"
 
   app "Marksidian.app"
+
+  postflight do
+    system_command "xattr",
+                   args: ["-cr", "#{appdir}/Marksidian.app"]
+  end
 
   zap trash: [
     "~/Library/Application Support/Marksidian",
