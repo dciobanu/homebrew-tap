@@ -5,21 +5,21 @@
 class HassCli < Formula
   desc "Command-line utility for controlling Home Assistant"
   homepage "https://github.com/dciobanu/hass-cli"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dciobanu/hass-cli/releases/download/v0.5.0/hass-cli_0.5.0_darwin_amd64.tar.gz"
-      sha256 "69a03b25bd7c4fdd58f8d23b63ab86dc4e3d25b13cbab4cd95e0513e938e7e84"
+      url "https://github.com/dciobanu/hass-cli/releases/download/v0.6.0/hass-cli_0.6.0_darwin_amd64.tar.gz"
+      sha256 "dae0ac4fdea5da18ce40efe535d668d7bfccdf48a190175146333d8679ef8dfd"
 
       define_method(:install) do
         bin.install "hass-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dciobanu/hass-cli/releases/download/v0.5.0/hass-cli_0.5.0_darwin_arm64.tar.gz"
-      sha256 "ef57291d8a21a441901e02dedd9c5deeeaf706abeb1d5e5f4867bd8a68132a3b"
+      url "https://github.com/dciobanu/hass-cli/releases/download/v0.6.0/hass-cli_0.6.0_darwin_arm64.tar.gz"
+      sha256 "4942165113d09619f54a58feca1ea7efc8cbc7d9f92dafdd700ffc06be3f4821"
 
       define_method(:install) do
         bin.install "hass-cli"
@@ -29,15 +29,15 @@ class HassCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dciobanu/hass-cli/releases/download/v0.5.0/hass-cli_0.5.0_linux_amd64.tar.gz"
-      sha256 "c07d2dea13048b7c082bf2effd5ccc5a59eef428dbdf6bc2a8fb0688218bdf26"
+      url "https://github.com/dciobanu/hass-cli/releases/download/v0.6.0/hass-cli_0.6.0_linux_amd64.tar.gz"
+      sha256 "196eab98356f39830d89f970f1d3f566a784b453918d7c0d5d91fab4e2dbb6a8"
       define_method(:install) do
         bin.install "hass-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dciobanu/hass-cli/releases/download/v0.5.0/hass-cli_0.5.0_linux_arm64.tar.gz"
-      sha256 "c0efaf67bade78052fc04874312dcc12d7146018b91185c8c1f8dcd2cc010fb1"
+      url "https://github.com/dciobanu/hass-cli/releases/download/v0.6.0/hass-cli_0.6.0_linux_arm64.tar.gz"
+      sha256 "cc7e032d35368ba50369f22384c4e7f78a3dfcf2de5df90e07c05ffc481f72cf"
       define_method(:install) do
         bin.install "hass-cli"
       end
