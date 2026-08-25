@@ -1,16 +1,16 @@
 cask "marksidian" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.3.7"
-  sha256 arm:   "a8289babd0a674ae23668c522f9b0ba469d5794168ae632bf38a28ac94653082",
-         intel: "d8ddec0ea6677fd814804c55dd15fd16852beb1613bc1631cc0c7f493627d92a"
+  version "0.3.8"
+  sha256 arm:   "ea7e1c1f61d768575c77f65b25b8e23ae196761f0726ddf9f3208d45e89d4e39",
+         intel: "ef9d677ed3f892ae2d90371dec6a664a0308f244e6786a68fecd83dd65d22653"
 
   url "https://github.com/dciobanu/marksidian/releases/download/v#{version}/Marksidian-#{version}-#{arch}-mac.zip"
   name "Marksidian"
   desc "Markdown editor with Obsidian-style live preview"
   homepage "https://github.com/dciobanu/marksidian"
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "Marksidian.app"
 
