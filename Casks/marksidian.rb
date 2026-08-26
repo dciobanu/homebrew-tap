@@ -5,10 +5,10 @@ cask "marksidian" do
   sha256 arm:   "d4d532b9c7c822cd1c23175fcb4f1047c177c8e22779a417187125b25c880450",
          intel: "0dd3c79646e7e438bd86e331b70fe9683d06351ee1fee0a833292a28a5a27e8f"
 
-  url "https://github.com/dciobanu/marksidian/releases/download/v#{version}/Marksidian-#{version}-#{arch}-mac.zip"
+  url "https://github.com/dciobanu/marksidian-releases/releases/download/v#{version}/Marksidian-#{version}-#{arch}-mac.zip"
   name "Marksidian"
   desc "Markdown editor with Obsidian-style live preview"
-  homepage "https://github.com/dciobanu/marksidian"
+  homepage "https://github.com/dciobanu/marksidian-releases"
 
   depends_on macos: :monterey
 
