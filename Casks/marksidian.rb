@@ -1,9 +1,9 @@
 cask "marksidian" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.3.17"
-  sha256 arm:   "37b2ba6ff811bed7ab2e882b6aa73de11b4afa378d11381ee27b875cc0e28312",
-         intel: "ebfbd89223844c68299dad156c48b06d01a9ace46ee984d83bfa75324a1d43ff"
+  version "0.4.0"
+  sha256 arm:   "596373a84af9f0a0b6ca90aec38aa2315420527b1c9bb321a35f03ed4b6b072a",
+         intel: "e1e09b07adc353caf5444b71096e2b0b270be690dd9c6bd0c4bd71f3a4ebf637"
 
   url "https://github.com/dciobanu/marksidian-releases/releases/download/v#{version}/Marksidian-#{version}-#{arch}-mac.zip"
   name "Marksidian"
@@ -14,6 +14,8 @@ cask "marksidian" do
 
   app "Marksidian.app"
 
+  # Unsigned build: Gatekeeper would otherwise refuse to launch it.
+  # Removed automatically once releases are Developer ID signed and notarized.
   postflight do
     system_command "xattr",
                    args: ["-cr", "#{appdir}/Marksidian.app"]
