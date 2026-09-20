@@ -1,9 +1,9 @@
 cask "marksidian" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.5.16"
-  sha256 arm:   "05fc06fb834beb03eb567af9dec28c5e95eeec2314acb42e95b0740ec8da532a",
-         intel: "c4120d2e197fd570f5a5a46e040b8643e37df14661ebf2c219b0ffd70d5bfcc1"
+  version "0.5.17"
+  sha256 arm:   "0f5cf873d8ff1c8473d63b042fae2123438c26ed08db8278679991db5f321359",
+         intel: "42b7fffd66846379766c2326f97e1cac65002f2ebc714f8895966af597fc272d"
 
   url "https://github.com/dciobanu/marksidian-releases/releases/download/v#{version}/Marksidian-#{version}-#{arch}-mac.zip"
   name "Marksidian"
