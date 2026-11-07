@@ -1,6 +1,6 @@
 cask "fovea" do
-  version "0.1.1"
-  sha256 "9de6950c324ff4ad8a293cfc4345b6895e2c34439934eb19d40aee17d5280a73"
+  version "0.1.2"
+  sha256 "924721d8575d55ee7447b4af297f03baccdeeb31dd7838b56381eaf1799fb591"
 
   url "https://github.com/IDv4/fovea-releases/releases/download/v#{version}/Fovea-#{version}.zip"
   name "Fovea"
